@@ -1,4 +1,4 @@
-package com.invenza.invenza_backend.config;
+/*package com.invenza.invenza_backend.config;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -15,10 +15,12 @@ public CommandLineRunner seedDefaultUser(LoginRepository loginRepository, Passwo
     return args -> {
         String defaultUsername = "SravaniM";
         String defaultPassword = "Sravani@123";
+        String defaultemail = "sravanimallampati@gmail.com";
         if (loginRepository.findByUsername(defaultUsername).isEmpty()) {
             LoginUsers user = new LoginUsers();
             user.setUsername(defaultUsername);
             user.setPassword(encoder.encode(defaultPassword));
+            user.setEmail(defaultemail);
             loginRepository.save(user);
             System.out.println("Default user seeded: " + defaultUsername);
         } else {
@@ -27,7 +29,7 @@ public CommandLineRunner seedDefaultUser(LoginRepository loginRepository, Passwo
     };
 }
 
-}   
+}   */
 
 
 

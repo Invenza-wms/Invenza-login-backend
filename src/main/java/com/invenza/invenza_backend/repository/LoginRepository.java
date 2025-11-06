@@ -7,7 +7,7 @@ import com.invenza.invenza_backend.entity.LoginUsers;
 
 
 
-public interface LoginRepository extends JpaRepository<LoginUsers, String> {
+public interface LoginRepository extends JpaRepository<LoginUsers, Long> {
     // Optional: custom query methods
      Optional <LoginUsers> findByUsername(String username);
 
